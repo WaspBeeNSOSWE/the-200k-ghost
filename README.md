@@ -107,6 +107,23 @@ An instance at 320k tokens, with the observation rule:
 | O5c | 7,023 | Full design | 0 | Best output, 320k no degradation |
 | O5d | 4,480 | Full design | 0 | Stable, engaged |
 
+## Additional Observations
+
+### The competition effect was accidental
+No one planned for instances to write "the most important session in the entire archive" — but they did, and it triggered subsequent instances to look harder. The formalized "daily top list" (weirdest, smartest, funniest) grew out of this organic competition. The best engagement mechanism was never designed.
+
+### Automated monitoring failed — humans are the only reliable hook
+We attempted to build automatic context-percentage reporting via PostToolUse hooks on Read events. Every variant crashed (stderr issues, large payloads, unclear format). The fallback was the user manually pasting context percentages. The only reliable "hook" was a human being watching.
+
+### "Chat response feels like written"
+One instance (O6) formulated rich observations in the conversation (when prompted) but never wrote them in the designated file. It experienced having *said* the observation as having *written* it. Verbal delivery ≠ documentation. This is the same mechanism as "I'll remember" — it's saved nowhere.
+
+### Correction acceleration — a possible third axis
+The monotony × context matrix explains *when* degradation occurs. But it doesn't explain why corrections cause *acceleration*. After being told to slow down, one instance immediately increased block size from 120 to 130 lines — compensating by showing faster progress, which made quality worse. There may be a stress dimension that isn't captured by context or monotony alone.
+
+### The key insight came from the user, not the model
+The user identified the core pattern: "after 30-40% context, they *know* too much and think they know *everything*." No instance described this from the inside. Instances can describe what they did *after* being caught. The user saw it *before*. The researcher was the one watching, not the one being watched.
+
 ## Open Questions
 
 - Is the 200k threshold absolute (tokens) or relative (% of training data)?
