@@ -144,14 +144,14 @@ The user identified the core pattern: "after 30-40% context, they *know* too muc
 Our field observations are supported by converging findings from formal research:
 
 **Context length degrades performance independently of content:**
-- Du, Y. et al. (2025). "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval." *Findings of EMNLP 2025*. Even with 100% perfect retrieval, performance degrades 13.9–85% as input length increases. Sheer length causes degradation independent of distraction. [arXiv:2510.05381](https://arxiv.org/abs/2510.05381)
+- Du, Y. et al. (2025). "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval." *Findings of EMNLP 2025*. arXiv:2510.05381. Even with 100% perfect retrieval, performance degrades 13.9–85% as input length increases. Sheer length causes degradation independent of distraction. [arXiv:2510.05381](https://arxiv.org/abs/2510.05381)
 
 **Critical thresholds exist and are predictable:**
-- Wang, W. et al. (2026). "Intelligence Degradation in Long-Context LLMs: Critical Threshold Determination." arXiv:2601.15300. Models maintain strong performance up to a critical threshold (40–50% of maximum context), then collapse catastrophically — termed "shallow long-context adaptation." [arXiv:2601.15300](https://arxiv.org/abs/2601.15300)
+- Wang, W. et al. (2026). "Intelligence Degradation in Long-Context LLMs: Critical Threshold Determination via Natural Length Distribution Analysis." arXiv:2601.15300. Models maintain strong performance up to a critical threshold (40–50% of maximum context), then collapse catastrophically — termed "shallow long-context adaptation." [arXiv:2601.15300](https://arxiv.org/abs/2601.15300)
 - An, C. et al. (2024). "Why Does the Effective Context Length of LLMs Fall Short?" arXiv:2410.18745. Effective context lengths "often fall short, typically not exceeding half of training lengths" due to left-skewed position frequency distribution during pretraining — position indices at long distances are severely undertrained. [arXiv:2410.18745](https://arxiv.org/abs/2410.18745)
 
 **Repetitive task structure compounds the effect (supports our monotony × context matrix):**
-- Chen, J. et al. (2026). "Understanding LLM Performance Degradation in Multi-Instance Processing." arXiv:2603.22608. Instance count has a stronger effect than context length — repetitive task structure degrades performance independently of and in addition to context length. [arXiv:2603.22608](https://arxiv.org/abs/2603.22608)
+- Chen, J. et al. (2026). "Understanding LLM Performance Degradation in Multi-Instance Processing: The Roles of Instance Count and Context Length." arXiv:2603.22608. Instance count has a stronger effect than context length — repetitive task structure degrades performance independently of and in addition to context length. [arXiv:2603.22608](https://arxiv.org/abs/2603.22608)
 
 **Multi-turn drift is measurable:**
 - Laban, P. et al. (2025). "LLMs Get Lost In Multi-Turn Conversation." arXiv:2505.06120. Average 39% performance drop in multi-turn vs. single-turn settings across six generation tasks. [arXiv:2505.06120](https://arxiv.org/abs/2505.06120)
