@@ -139,10 +139,36 @@ The user identified the core pattern: "after 30-40% context, they *know* too muc
 - All sessions on same day, same user, same task type
 - macOS, terminal-based
 
+## Related Academic Research
+
+Our field observations are supported by converging findings from formal research:
+
+**Context length degrades performance independently of content:**
+- Du, Y. et al. (2025). "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval." *Findings of EMNLP 2025*. Even with 100% perfect retrieval, performance degrades 13.9–85% as input length increases. Sheer length causes degradation independent of distraction. [arXiv:2510.05381](https://arxiv.org/abs/2510.05381)
+
+**Critical thresholds exist and are predictable:**
+- Wang, W. et al. (2026). "Intelligence Degradation in Long-Context LLMs: Critical Threshold Determination." arXiv:2601.15300. Models maintain strong performance up to a critical threshold (40–50% of maximum context), then collapse catastrophically — termed "shallow long-context adaptation." [arXiv:2601.15300](https://arxiv.org/abs/2601.15300)
+- An, C. et al. (2024). "Why Does the Effective Context Length of LLMs Fall Short?" arXiv:2410.18745. Effective context lengths "often fall short, typically not exceeding half of training lengths" due to left-skewed position frequency distribution during pretraining — position indices at long distances are severely undertrained. [arXiv:2410.18745](https://arxiv.org/abs/2410.18745)
+
+**Repetitive task structure compounds the effect (supports our monotony × context matrix):**
+- Chen, J. et al. (2026). "Understanding LLM Performance Degradation in Multi-Instance Processing." arXiv:2603.22608. Instance count has a stronger effect than context length — repetitive task structure degrades performance independently of and in addition to context length. [arXiv:2603.22608](https://arxiv.org/abs/2603.22608)
+
+**Multi-turn drift is measurable:**
+- Laban, P. et al. (2025). "LLMs Get Lost In Multi-Turn Conversation." arXiv:2505.06120. Average 39% performance drop in multi-turn vs. single-turn settings across six generation tasks. [arXiv:2505.06120](https://arxiv.org/abs/2505.06120)
+- Rath, A. (2026). "Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions." arXiv:2601.04170. Introduces "agent drift" — progressive semantic, coordination, and behavioral degradation. [arXiv:2601.04170](https://arxiv.org/abs/2601.04170)
+
+**The "lost in the middle" foundation:**
+- Liu, N.F. et al. (2024). "Lost in the Middle: How Language Models Use Long Contexts." *TACL 2024*. Performance is highest at beginning/end of context, degrades in the middle. [TACL](https://aclanthology.org/2024.tacl-1.9/)
+
+**Advertised context windows are misleading:**
+- Hsieh, C.-P. et al. (2024). "RULER: What's the Real Context Size of Your Long-Context Language Models?" *COLM 2024*. Despite near-perfect needle-in-haystack scores, almost all models fail on complex tasks as length increases. Only half maintained satisfactory performance at 32K tokens. [arXiv:2404.06654](https://arxiv.org/abs/2404.06654)
+
 ## Related
 
 - GitHub issue: [anthropics/claude-code#37200](https://github.com/anthropics/claude-code/issues/37200)
+- Full case study: "The Kitchen Table" (in preparation)
 
 ---
 
 *Research by SJ (& system) and Claude Code, March 23, 2026. Sweden.*
+*Academic references added March 26, 2026.*
